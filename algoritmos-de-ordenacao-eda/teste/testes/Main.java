@@ -2,7 +2,7 @@ package testes;
 
 import java.util.Date;
 
-import algoritmos.dividAndConquer.QuickSortDualPivo;
+import algoritmos.dividAndConquer.QuickSortDualPivot;
 import algoritmos.variationsSorting.selectionSort.OddEvenSelectionSort;
 import sorting.AbstractSorting;
 import util.RandomIntegerList;
@@ -39,7 +39,7 @@ public class Main {
 		
 		Integer[] a = new Integer[]{6,4,7,2,1,8,9,0,3,5};
 		imprime(a);
-		AbstractSorting<Integer> sort = new QuickSortDualPivo<>();
+		AbstractSorting<Integer> sort = new QuickSortDualPivot<>();
 		sort.sort(a);
 		imprime(a);
 		

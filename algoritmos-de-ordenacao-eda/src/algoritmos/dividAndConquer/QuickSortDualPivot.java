@@ -3,7 +3,7 @@ package algoritmos.dividAndConquer;
 import sorting.AbstractSorting;
 import util.Util;
 
-public class QuickSortDualPivo<T extends Comparable<T>> extends AbstractSorting<T>{
+public class QuickSortDualPivot<T extends Comparable<T>> extends AbstractSorting<T>{
 
 	@Override
 	public void sort(T[] array, int leftIndex, int rightIndex) {
