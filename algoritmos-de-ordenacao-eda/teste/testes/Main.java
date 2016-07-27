@@ -2,6 +2,7 @@ package testes;
 
 import java.util.Date;
 
+import algoritmos.dividAndConquer.QuickSortDualPivo;
 import algoritmos.variationsSorting.selectionSort.OddEvenSelectionSort;
 import sorting.AbstractSorting;
 import util.RandomIntegerList;
@@ -34,7 +35,13 @@ public class Main {
 
 	public static void main(String[] args) {
 		
-		executingSortAlgoritm(new OddEvenSelectionSort<>(), 10);
+		//executingSortAlgoritm(new OddEvenSelectionSort<>(), 10);
+		
+		Integer[] a = new Integer[]{6,4,7,2,1,8,9,0,3,5};
+		imprime(a);
+		AbstractSorting<Integer> sort = new QuickSortDualPivo<>();
+		sort.sort(a);
+		imprime(a);
 		
 		/*
 		String saida = "alg time sample" + "\n";
