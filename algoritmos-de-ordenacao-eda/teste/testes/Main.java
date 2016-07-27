@@ -2,7 +2,7 @@ package testes;
 
 import java.util.Date;
 
-import algoritmos.variationsSorting.insertionSort.OddEvenInsertionSort;
+import algoritmos.variationsSorting.selectionSort.OddEvenSelectionSort;
 import sorting.AbstractSorting;
 import util.RandomIntegerList;
 
@@ -34,7 +34,7 @@ public class Main {
 
 	public static void main(String[] args) {
 		
-		executingSortAlgoritm(new OddEvenInsertionSort<>(), 10);
+		executingSortAlgoritm(new OddEvenSelectionSort<>(), 10);
 		
 		/*
 		String saida = "alg time sample" + "\n";
