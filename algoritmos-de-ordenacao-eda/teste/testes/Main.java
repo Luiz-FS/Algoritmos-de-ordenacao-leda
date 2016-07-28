@@ -3,7 +3,6 @@ package testes;
 import java.util.Date;
 
 import algoritmos.dividAndConquer.QuickSortDualPivot;
-import algoritmos.variationsSorting.selectionSort.OddEvenSelectionSort;
 import sorting.AbstractSorting;
 import util.RandomIntegerList;
 
