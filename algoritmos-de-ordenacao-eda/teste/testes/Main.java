@@ -1,13 +1,22 @@
 package testes;
 
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
 import java.util.Date;
 
-import algoritmos.dividAndConquer.QuickSortDualPivot;
+import algoritmos.dividAndConquer.MergeSort;
+import algoritmos.dividAndConquer.QuickSort;
+import algoritmos.linearSorting.CountingSort;
+import algoritmos.simpleSorting.InsertionSort;
+import algoritmos.simpleSorting.SelectionSort;
+import algoritmos.variationsSorting.countSort.ExtendedCountingSort;
+import algoritmos.variationsSorting.mergeSort.HybridMergeSort;
 import sorting.AbstractSorting;
 import util.RandomIntegerList;
 
 public class Main {
-	
+	/*
 	private static <T> void imprime(T[] array) {
 
 		String print = "";
@@ -17,16 +26,16 @@ public class Main {
 		}
 
 		System.out.println(print);
-	}
+	}*/
 
 	private static long executingSortAlgoritm(AbstractSorting<Integer> sort, int tamanho) {
 
 		Integer[] array = RandomIntegerList.randomArray(tamanho);
-		imprime(array);
+		
 		long startTime = new Date().getTime();
 		sort.sort(array);
 		long endTime = new Date().getTime();
-		imprime(array);
+		
 		long diference = endTime - startTime;
 
 		return diference;
@@ -34,15 +43,7 @@ public class Main {
 
 	public static void main(String[] args) {
 		
-		//executingSortAlgoritm(new OddEvenSelectionSort<>(), 10);
 		
-		Integer[] a = new Integer[]{6,4,7,2,1,8,9,0,3,5};
-		imprime(a);
-		AbstractSorting<Integer> sort = new QuickSortDualPivot<>();
-		sort.sort(a);
-		imprime(a);
-		
-		/*
 		String saida = "alg time sample" + "\n";
 
 		for(int i = 20000; i <= 40000; i += 1000){
@@ -66,6 +67,6 @@ public class Main {
 			
 		} catch (IOException e) {
 			e.printStackTrace();
-		}*/
+		}
 	}
 }
