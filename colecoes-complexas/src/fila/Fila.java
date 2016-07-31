@@ -77,7 +77,7 @@ public class Fila {
 	public int remove() throws Exception{
 		
 		if (isEmpity()) {
-			throw new Exception("empity");
+			throw new Exception("empty");
 		}
 		
 		int value = this.fila[this.head];
@@ -96,7 +96,7 @@ public class Fila {
 	public int element() throws Exception{
 		
 		if (isEmpity()) {
-			throw new Exception("empity");
+			throw new Exception("empty");
 		}
 		
 		return this.fila[this.head];
