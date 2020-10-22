@@ -1,2 +1,2 @@
 # Algoritmos-de-ordenacao-leda
-Algoritmos de ordenação
+Algoritmos de ordenação.
